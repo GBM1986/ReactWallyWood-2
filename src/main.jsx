@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from "react-router-dom"
-import { AuthProvider } from './Components/Auth/AuthProvider.jsx'
+import { SupabaseProvider } from './Components/Auth/SupabaseProvider.jsx';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
+    <SupabaseProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </AuthProvider>
+    </SupabaseProvider>
   </React.StrictMode>,
 )
